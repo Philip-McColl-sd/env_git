@@ -1,0 +1,63 @@
+# create virtual enviroment
+
+python -m venv env
+
+# activate virtual enviroment
+
+.\env\Scripts\activate
+
+# install requiremnts
+
+pip install -r requirements.txt
+
+# frezee requiremnts
+
+pip freeze > requirements.txt
+
+GitHub:
+
+To push your local repository to GitHub, you can follow these steps:
+
+1. Initialize a local Git repository: If you haven't already done so, navigate to the root directory of your project in the terminal or command prompt and run the command:
+
+   ```
+   git init
+   ```
+
+2. Add your files to the Git repository: Use the following command to add all the files in your project to the staging area:
+
+   ```
+   git add .
+   ```
+
+   This command adds all the files and changes in the current directory to the staging area. If you only want to add specific files, you can specify their names instead of using `.`.
+
+3. Commit your changes: Committing creates a new snapshot of your project with the files you added to the staging area. Run the following command to commit your changes:
+
+   ```
+   git commit -m "Your commit message"
+   ```
+
+   Replace "Your commit message" with a brief description of the changes you made.
+
+4. Link your local repository to the remote repository on GitHub: On GitHub, create a new repository if you haven't done so already. Then, copy the remote repository's URL.
+
+5. Add the remote repository URL: In your terminal or command prompt, run the following command to add the remote repository:
+
+   ```
+   git remote add origin <remote repository URL>
+   ```
+
+   Replace `<remote repository URL>` with the URL of your remote repository.
+
+6. Push your changes to GitHub: Finally, push your committed changes to the remote repository by running the command:
+
+   ```
+   git push -u origin main
+   ```
+
+   This command pushes your local branch (usually "main" or "master") to the "origin" remote repository.
+
+If you have already pushed changes previously, you can simply use `git push` without specifying the remote and branch names.
+
+Make sure you have the necessary permissions to push to the remote repository. If authentication is required, you will be prompted to enter your GitHub credentials.
