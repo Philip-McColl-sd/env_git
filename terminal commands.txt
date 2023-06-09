@@ -14,6 +14,8 @@ pip install -r requirements.txt
 
 pip freeze > requirements.txt
 
+
+
 GitHub:
 
 To push your local repository to GitHub, you can follow these steps:
